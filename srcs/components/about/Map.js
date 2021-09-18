@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { RenderAfterNavermapsLoaded, NaverMap, Marker } from 'react-naver-maps'
 
+
 const Wrapper = styled.div`
   width: 100%;
   margin: 20rem auto;
@@ -35,6 +36,7 @@ function NaverMapAPI(){
 
 const Map = ()=>{
 	const API_KEY = process.env.NEXT_PUBLIC_API_CLIENT_ID
+
 	return (
 		<Wrapper>
 			<MapContainer>
