@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { RenderAfterNavermapsLoaded, NaverMap, Marker } from 'react-naver-maps'
-
+// import {useEffect, useState} from "react";
 
 const Wrapper = styled.div`
   width: 100%;

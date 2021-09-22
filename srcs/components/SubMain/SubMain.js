@@ -3,17 +3,16 @@ import Profile from "../about/Profile";
 import Organization from "../about/Orgaization";
 import ProductDrPODI from "../about/ProductDrPODI";
 import ProductShuFooter from "../about/ProductShuFooter";
-import Map from "../about/Map";
 
-// import dynamic from 'next/dynamic'
-//
-//
-// const MapComponent = dynamic(
-// 	import('../about/Map'), {
-// 		loading: () => (<div>Map Loading</div>),
-// 		ssr: false,
-// 	},
-// );
+import dynamic from 'next/dynamic'
+
+
+const DynamicMap = dynamic(import('../about/Map'),
+	{
+		loading: () => (<div>Map Loading</div>),
+		ssr: false,
+	},
+);
 
 
 const Wrapper = styled.div`
@@ -24,7 +23,7 @@ const SubMain = ({curr}) => {
 		<Wrapper>
 			{ curr.page === "Profile" &&<Profile/>}
 			{ curr.page === "Organization" &&<Organization/>}
-			{ curr.page === "Map" &&<Map/>}
+			{ curr.page === "Map" &&<DynamicMap/>}
 			{ curr.page === "ProductDrPODI" &&<ProductDrPODI/>}
 			{ curr.page === "ProductShuFooter" &&<ProductShuFooter/>}
 		</Wrapper>
