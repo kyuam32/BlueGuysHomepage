@@ -1,15 +1,17 @@
 import styled from "styled-components";
+import {useEffect, useState} from "react";
 
 const Button = styled.div`
-  z-index: 100;
   width: 8rem;
   height: 8rem;
-  position: fixed;
+  min-width: 36px;
+  min-height: 36px;
+  position: relative;
   cursor: pointer;
   background: #1460a1;
   text-align: center;
-  bottom: 10%;
-  right: 10%;
+  right: 2%;
+  top: ${props => `${props.height * 0.9}px`}
 `
 
 const Img = styled.div`
@@ -34,6 +36,22 @@ const Text = styled.span`
 `
 
 const ScrollTop = ()=>{
+	const [winHeight, setWinHeight] = useState(getWindowHeight())
+	function getWindowHeight() {
+		const { innerHeight: winHeight } = window;
+		return winHeight;
+	}
+	function handleResize() {
+		setWinHeight(getWindowHeight());
+	}
+
+	useEffect(() => {
+		window.addEventListener('resize', handleResize);
+		return () => {
+			 window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
 	const scrollToTop = () => {
 		window.scrollTo({
 			top:0,
@@ -42,12 +60,11 @@ const ScrollTop = ()=>{
 	};
 
 	return (
-		<Button onClick={scrollToTop}>
+		<Button height={winHeight} onClick={scrollToTop}>
 			<Img/>
 			<Text>TOP</Text>
 		</Button>
 	);
 }
-
 
 export default ScrollTop;

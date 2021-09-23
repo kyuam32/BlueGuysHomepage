@@ -47,7 +47,6 @@ const MainContainer = () => {
 				<MainBanner/>
 			</Banner>
 			<Deco/>
-			{/*<Image src="/img/main/bg.png" alt="mainImg" width={1920} height={600}/>*/}
 			<InfoBoxes>
 				<MainAbout/>
 				<MainProduct/>

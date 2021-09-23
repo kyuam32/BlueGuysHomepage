@@ -3,7 +3,6 @@ import Layout from "./Layout/Layout";
 import SubBanner from "./SubMain/SubBanner";
 import SubMain from "./SubMain/SubMain";
 import SubNavi from "./SubMain/SubNavi";
-import ScrollTop from "./Layout/ScrollTop";
 
 const ProductPage = () => {
 	const list = [
@@ -36,7 +35,6 @@ const ProductPage = () => {
 			<SubBanner subtitle={list[currPage].string}/>
 			<SubNavi list={list} curr={currPage} change={setCurrPage}/>
 			{/*<SubMain curr={list[currPage]}/>*/}
-			<ScrollTop/>
 		</Layout>
 	);
 }

@@ -1,6 +1,14 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { withRouter } from 'next/router';
+import dynamic from "next/dynamic";
+
+const ScrollTop = dynamic(
+	() => {
+		return import("./ScrollTop");
+	},
+	{ ssr: false }
+);
 
 const NavBar = styled.div`
   width: 100%;
@@ -85,6 +93,7 @@ const Header = ({router}) => {
 					</NavButton>
 				</NavMenu>
 			</Wrapper>
+			<ScrollTop/>
 		</NavBar>
 	);
 }

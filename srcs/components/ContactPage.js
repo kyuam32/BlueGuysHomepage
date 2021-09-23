@@ -1,7 +1,6 @@
 import styled,{css} from "styled-components";
 import Layout from "./Layout/Layout";
 import SubBanner from "./SubMain/SubBanner";
-import ScrollTop from "./Layout/ScrollTop";
 
 const Wrapper = styled.div`
   width: 80rem;
@@ -65,7 +64,6 @@ const ContactPage = ( )=> {
 				</TextBase>
 				<Bg/>
 			</Wrapper>
-			<ScrollTop/>
 		</Layout>
 	);
 }

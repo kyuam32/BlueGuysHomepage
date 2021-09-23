@@ -30,13 +30,14 @@ const Prize = styled.div`
   font-size: 2.4rem;
   font-stretch: normal;
   font-style: normal;
+  line-height: 1.8;
   letter-spacing: -0.96px;
   color: #434343;
 `
 
 const IntorSmalllight = styled.span`
   margin-top: 18rem;
-  font-family: Noto Sans KR, Serif;
+  font-family: Noto Sans KR, serif;
   display: block;
   margin-left: 3.2rem;
   font-size: 2.4rem;
