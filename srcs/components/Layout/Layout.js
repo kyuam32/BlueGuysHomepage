@@ -9,6 +9,10 @@ const LayoutFrame = styled.div`
 
 const Main = styled.div`
   padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 `
 
 const Layout = (props) => {

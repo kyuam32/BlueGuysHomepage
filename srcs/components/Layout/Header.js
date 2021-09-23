@@ -4,19 +4,16 @@ import { withRouter } from 'next/router';
 
 const NavBar = styled.div`
   width: 100%;
-  min-width: 640px;
   height: 12rem;
   background-color: #ffffff;
   position: fixed;
   z-index: 10;
   display: flex;
-  align-items: center;
+  justify-content: center;
 `
 
 const Wrapper = styled.div`
-  width: 100%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 150rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,6 +21,14 @@ const Wrapper = styled.div`
 
 const NavMenu = styled.div`
   display: flex;
+  margin-right: 6%;
+`
+
+const HomeButton = styled.div`
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 10%;
 `
 
 const NavButton = styled.div`
@@ -34,7 +39,6 @@ const NavButton = styled.div`
   & + & {
     margin-left: 5rem;
   }
-
 `
 
 const NavText = styled.div`
@@ -53,11 +57,11 @@ const Header = ({router}) => {
 	return (
 		<NavBar>
 			<Wrapper>
-				<NavButton>
+				<HomeButton>
 					<Link href="/">
 						<NavText status={router.pathname === "/"}>Home</NavText>
 					</Link>
-				</NavButton>
+				</HomeButton>
 				<NavMenu>
 					<NavButton>
 						<Link href="/about">

@@ -4,19 +4,19 @@ const Wrapper = styled.div`
   width: 100%;
   height: 42.5rem;
   display: flex;
+  justify-content: center;
   background-color: #ececec;
 `
 const Box = styled.div`
-	margin-top: 8.5rem;
-  margin-left: 15%;
+  width: 150rem;
+  margin-top: 8.5rem;
 `
 const FooterText = styled.p`
-  font-size: 2rem;
+  margin-left: 10%;
   & + & {
     margin-top: 2.5rem;
   }
-  color: rgba(84, 84, 84, 0.96);
-  font-family: Noto Sans KR;
+  font-family: Noto Sans KR, Serif;
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.12;

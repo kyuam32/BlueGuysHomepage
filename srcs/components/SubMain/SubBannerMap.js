@@ -2,16 +2,15 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   background: #f4f6f9;
-
 `
 
 const Navi = styled.div`
   height: 6rem;
-  margin-left: 15%;
+  margin-left: 10%;
 `
 
 const Text = styled.span`
-  font-family: Noto Sans KR;
+  font-family: Noto Sans KR, Serif;
   font-size: 1.75rem;
   font-weight: 500;
   font-stretch: normal;

@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 `
 
 const Banner = styled.div`
-  width: 160rem;
+  width: 150rem;
   height: 75rem;
   background-image: url("/img/main/banner.png");
   background-size: cover;
@@ -21,7 +21,7 @@ const Banner = styled.div`
 `
 
 const Deco = styled.div`
-  width: 160rem;
+  width: 150rem;
   height: 50rem;
   background-image: url("/img/main/bg.png");
   background-size: cover;

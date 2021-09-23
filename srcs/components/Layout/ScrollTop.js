@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 
 const Button = styled.div`
@@ -6,11 +5,11 @@ const Button = styled.div`
   width: 8rem;
   height: 8rem;
   position: fixed;
-  top: 80vh;
-  left: 90vw;
   cursor: pointer;
   background: #1460a1;
   text-align: center;
+  bottom: 10%;
+  right: 10%;
 `
 
 const Img = styled.div`
@@ -35,16 +34,6 @@ const Text = styled.span`
 `
 
 const ScrollTop = ()=>{
-	const [visible, setVisivle] = useState(false);
-	const toggleVisible = () => {
-		const scrolled = document.documentElement.scrollTop;
-		if (scrolled > 200) {
-			setVisivle(true);
-		} else if (scrolled <= 200) {
-			setVisivle(false);
-		}
-	};
-
 	const scrollToTop = () => {
 		window.scrollTo({
 			top:0,
@@ -52,15 +41,8 @@ const ScrollTop = ()=>{
 		})
 	};
 
-	useEffect(() => {
-		window.addEventListener("scroll", toggleVisible);
-		return () => {
-			window.removeEventListener("scroll", toggleVisible)
-		}
-	})
-
 	return (
-		<Button onClick={scrollToTop} style={{display: visible ? 'inline' : 'none'}}>
+		<Button onClick={scrollToTop}>
 			<Img/>
 			<Text>TOP</Text>
 		</Button>

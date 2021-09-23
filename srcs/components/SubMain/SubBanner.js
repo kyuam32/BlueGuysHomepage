@@ -12,7 +12,7 @@ const SubB = styled.div`
 
 const Banner = styled.div`
   height: 23rem;
-  width: 192rem;
+  width: 150rem;
   mix-blend-mode: multiply;
   background-image: url("/img/subbanner${(props) => props.path}.png");
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ const Banner = styled.div`
 const Text = styled.span`
   position: absolute;
   text-align: center;
-  font-family: GmarketSansBold;
+  font-family: GmarketSansBold, Serif;
   font-size: 3.5rem;
   font-weight: bold;
   font-stretch: normal;
@@ -41,7 +41,7 @@ const SubBanner = ({router, subtitle}) => {
 				</Banner>
 				<Text>{title}</Text>
 			</SubB>
-			<SubBannerMap title={title} subtitle={subtitle}></SubBannerMap>
+			<SubBannerMap title={title} subtitle={subtitle}/>
 		</div>
 	);
 }
