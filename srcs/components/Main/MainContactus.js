@@ -2,24 +2,26 @@ import styled from "styled-components";
 import SeeMoreBtn from "../Layout/SeeMoreBtn";
 
 const InfoBox = styled.div`
-  width: 100%;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  width: 120rem;
   background: #ececec;
-  position: relative;
-  bottom: 10rem;
   display: flex;
 `
 
 const InfoImg = styled.div`
   width: 50%;
   height: 49.1rem;
-  background-image: url("/img/main/contact.png");
+  background-image: url("/img/main/contact.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 `
 
 const InfoDescript = styled.div`
-	margin: 5rem 5rem;
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
 `
 
 const Title1 = styled.span`
@@ -56,16 +58,17 @@ const MainContactUs = () => {
 		<InfoBox>
 			<InfoImg/>
 			<InfoDescript>
-				<Title1>Contact Us</Title1><br/>
-				<Title2>Find your Dream</Title2>
-				<br/>
-				<Descript1>주식회사 푸른청년은<br/>
-					<Descript2>Foot & Ankle Health Care System</Descript2>
-					에<br/>
-					함께하고자 하는 모든분께 열려 있습니다
-				</Descript1>
+				<div style={{margin: "5rem 5rem"}}>
+					<Title1>Contact Us</Title1><br/>
+					<Title2>Find your Dream</Title2><br/><br/>
+					<Descript1>주식회사 푸른청년은<br/>
+						<Descript2>Foot & Ankle Health Care System</Descript2>에<br/>
+						함께하고자 하는<br/>
+						모든분께 열려 있습니다
+					</Descript1>
+				</div>
+				<SeeMoreBtn address={"contact"} align={"right"}/>
 			</InfoDescript>
-			<SeeMoreBtn address={"contact"} style={{position: "relative"}}/>
 		</InfoBox>
 	);
 }

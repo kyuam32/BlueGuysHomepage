@@ -1,22 +1,29 @@
 import styled from "styled-components";
 import {useEffect, useState} from "react";
 
+
+const Wrapper = styled.div`
+  width: 120rem;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  z-index: -99;
+  top: ${props => `${props.height * 0.9}px`}
+`
 const Button = styled.div`
   width: 8rem;
   height: 8rem;
   min-width: 36px;
   min-height: 36px;
-  position: relative;
   cursor: pointer;
   background: #1460a1;
   text-align: center;
-  right: 2%;
-  top: ${props => `${props.height * 0.9}px`}
+  z-index: 99;
 `
 
 const Img = styled.div`
   margin-top: 1.2rem;
-  background-image: url("/img/arrow.png");
+  background-image: url("/img/arrow.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -60,10 +67,12 @@ const ScrollTop = ()=>{
 	};
 
 	return (
-		<Button height={winHeight} onClick={scrollToTop}>
-			<Img/>
-			<Text>TOP</Text>
-		</Button>
+		<Wrapper height={winHeight}>
+			<Button onClick={scrollToTop}>
+				<Img/>
+				<Text>TOP</Text>
+			</Button>
+		</Wrapper>
 	);
 }
 

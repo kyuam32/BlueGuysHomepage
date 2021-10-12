@@ -1,16 +1,20 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  width: 150rem;
+  height: 6rem;
   background: #f4f6f9;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 `
 
 const Navi = styled.div`
-  height: 6rem;
-  margin-left: 10%;
+  width: 120rem;
 `
 
 const Text = styled.span`
-  font-family: Noto Sans KR, Serif;
+  font-family: Noto Sans KR, serif;
   font-size: 1.75rem;
   font-weight: 500;
   font-stretch: normal;

@@ -4,6 +4,7 @@ import UrlMap from "../function/UrlMap";
 import SubBannerMap from "./SubBannerMap";
 
 const SubB = styled.div`
+  width: 150rem;
   height: 23rem;
   background: #e0e3ea;
   display: flex;
@@ -11,18 +12,19 @@ const SubB = styled.div`
 `
 
 const Banner = styled.div`
-  height: 23rem;
   width: 150rem;
+  height: 23rem;
   mix-blend-mode: multiply;
-  background-image: url("/img/subbanner${(props) => props.path}.png");
+  background-image: url("/img/subbanner${(props) => props.path}.webp");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 `
 
 const Text = styled.span`
   position: absolute;
   text-align: center;
-  font-family: GmarketSansBold, Serif;
+  font-family: GmarketSansBold, serif;
   font-size: 3.5rem;
   font-weight: bold;
   font-stretch: normal;
@@ -37,8 +39,7 @@ const SubBanner = ({router, subtitle}) => {
 	return (
 		<div>
 			<SubB>
-				<Banner path={router.pathname}>
-				</Banner>
+				<Banner path={router.pathname}/>
 				<Text>{title}</Text>
 			</SubB>
 			<SubBannerMap title={title} subtitle={subtitle}/>

@@ -2,8 +2,9 @@
 import styled, {css} from "styled-components";
 
 const Wrapper = styled.div`
+  width: 120rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 `
 
 const TextContainer = styled.div`
@@ -13,27 +14,27 @@ const TextContainer = styled.div`
 const ImgContainer = styled.div`
   width: 50rem;
   height: 45rem;
-  background-image: url("/img/description/content1.png");
+  background-image: url("/img/description/content1.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
 `
 
 const TextTitle = styled.span`
-  object-fit: contain;
-  font-family: GmarketSansBold, Serif;
+  padding-bottom: 5rem;
+  font-family: GmarketSansBold, serif;
   font-size: 4.25rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
+  display: block;
   text-decoration: underline;
   text-underline-offset: 1.2rem;
   letter-spacing: -0.085rem;
   color: #28a7e1;
 `
 const TextBase = styled.span`
-  object-fit: contain;
-  font-family: Noto Sans KR, Serif;
+  font-family: Noto Sans KR, serif;
   font-size: 2.4rem;
   font-weight: 300;
   font-stretch: normal;
@@ -57,10 +58,10 @@ const Content1 = () => {
 	return (
 		<Wrapper>
 			<TextContainer>
-				<TextTitle>Foot & Ankle products</TextTitle><br/><br/>
+				<TextTitle>Foot & Ankle products</TextTitle>
 				<TextBase>족부 전문의들이 직접<br/>
 					<TextBold>Foot & Ankle Health Care System을 실현</TextBold>하기 위해<br/>
-					대중적으로 필요한 제품을 <TextBold>기획하고 제작합니다</TextBold><br/>
+					대중적으로 필요한 제품을 <TextBold>기획 및 제작</TextBold><br/>
 				</TextBase>
 				<TextBase float>
 					<TextBold style={{textDecoration: "underline"}}>

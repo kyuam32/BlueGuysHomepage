@@ -10,7 +10,7 @@ const ScrollTop = dynamic(
 	{ ssr: false }
 );
 
-const NavBar = styled.div`
+const Wrapper = styled.div`
   width: 100%;
   height: 12rem;
   background-color: #ffffff;
@@ -20,51 +20,42 @@ const NavBar = styled.div`
   justify-content: center;
 `
 
-const Wrapper = styled.div`
-  width: 150rem;
+const NavBar = styled.div`
+  width: 120rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `
 
+
 const NavMenu = styled.div`
   display: flex;
-  margin-right: 6%;
 `
 
 const HomeButton = styled.div`
   width: auto;
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 0 10%;
+  text-align: center;
 `
-
-const NavButton = styled.div`
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
+const NavButton = styled(HomeButton)`
   & + & {
     margin-left: 5rem;
   }
 `
 
-const NavText = styled.div`
-  font-family: ${({status}) => status ? "GmarketSansBold" : "GmarketSansMedium"};
+const NavText = styled.span`
+  font-family: GmarketSansMedium ,serif;
   font-size: 2rem;
-  font-weight: 500;
   cursor: pointer;
   color: ${({status}) => status ? "rgba(38, 99, 160, 0.96)" : "rgba(189, 189, 189, 0.96)"};
   &:hover {
     color: rgba(38, 99, 160, 0.96);
-    font-family: GmarketSansBold, serif;
   }
 `
 
 const Header = ({router}) => {
 	return (
-		<NavBar>
-			<Wrapper>
+		<Wrapper>
+			<NavBar>
 				<HomeButton>
 					<Link href="/">
 						<NavText status={router.pathname === "/"}>Home</NavText>
@@ -92,9 +83,9 @@ const Header = ({router}) => {
 						</Link>
 					</NavButton>
 				</NavMenu>
-			</Wrapper>
+			</NavBar>
 			<ScrollTop/>
-		</NavBar>
+		</Wrapper>
 	);
 }
 

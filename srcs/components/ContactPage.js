@@ -17,7 +17,7 @@ const Bg = styled.div`
   height: 30rem;
   position: relative;
   bottom: -10rem;
-  background-image: url("/img/contact/bg.png");
+  background-image: url("/img/contact/bg.webp");
   background-repeat: no-repeat;
   background-size: contain;
 `

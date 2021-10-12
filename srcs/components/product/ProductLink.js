@@ -1,19 +1,22 @@
 import styled from "styled-components";
 import Link from "next/link";
+import PlusButton from "./PlusButton";
 
 const InfoBox = styled.div`
-  width: 112rem;
-  height: 48rem;
-  box-shadow: 6px 6px 12px 0 rgba(0,0,0,0.4);
+  width: 120rem;
+  height: 49rem;
   display: flex;
 `
 
 const InfoProduct = styled.div`
-  width: 56rem;
-  height: 48rem;
-  background-image: url("/img/main/${props => props.img}");
-  background-size : 56rem 48rem;
+  width: 60rem;
+  height: 49rem;
+  background-image: url("/img/products/${props => props.img}");
+  background-size : 60rem 49.5rem;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 const InfoDescript = styled.div`
@@ -22,7 +25,7 @@ const InfoDescript = styled.div`
 `
 
 const Title = styled.span`
-  font-family: Noto Sans KR, Serif;
+  font-family: Noto Sans KR, serif;
   font-size: 7.2rem;
   font-weight: bold;
   font-stretch: normal;
@@ -33,7 +36,7 @@ const Title = styled.span`
 `
 
 const Descript1 = styled.span`
-  font-family: Noto Sans KR, Serif;
+  font-family: Noto Sans KR, serif;
   font-size: 3.05rem;
   font-weight: 300;
   font-stretch: normal;
@@ -47,11 +50,11 @@ const Descript2 = styled.span`
   font-weight: bold;
 `
 
-const MainProduct = () => {
+const ProductLink = () => {
 	return (
 		<InfoBox>
 			<Link href="/products">
-				<InfoProduct img="frame1.png">
+				<InfoProduct img="frame1.webp">
 					<InfoDescript>
 						<Title>Dr.FODI</Title>
 						<br/>
@@ -59,10 +62,11 @@ const MainProduct = () => {
 							<Descript2> Comfortable Step</Descript2>
 						</Descript1>
 					</InfoDescript>
+					<PlusButton/>
 				</InfoProduct>
 			</Link>
 			<Link href="/products">
-				<InfoProduct img="frame2.png">
+				<InfoProduct img="frame2.webp">
 					<InfoDescript>
 						<Title>ShuFooter</Title>
 						<br/>
@@ -70,10 +74,11 @@ const MainProduct = () => {
 							<Descript2> You Spurt</Descript2>
 						</Descript1>
 					</InfoDescript>
+					<PlusButton/>
 				</InfoProduct>
 			</Link>
 		</InfoBox>
 	);
 }
 
-export default MainProduct;
+export default ProductLink;

@@ -2,42 +2,35 @@ import styled from "styled-components";
 import MainBanner from "./MainBanner";
 import MainAbout from "./MainAbout";
 import MainContactUs from "./MainContactus";
-import MainProduct from "./MainProduct"
+import MainProducts from "./MainProducts";
 
 const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
 `
 
 const Banner = styled.div`
-  width: 150rem;
+  width: 120rem;
   height: 75rem;
-  background-image: url("/img/main/banner.png");
-  background-size: cover;
+  background-image: url("/img/main/banner.webp");
+  background-size: 90rem 70rem;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: right;
+  background-position-y: top;
 `
 
 const Deco = styled.div`
-  width: 150rem;
-  height: 50rem;
-  background-image: url("/img/main/bg.png");
+  width: 100%;
+  height: 60rem;
+  background-image: url("/img/main/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-`
-
-const InfoBoxes = styled.div`
-  width: 112rem;
-  height: 110rem;
-  position: relative;
-  bottom: 30rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  align-items: end;
+  justify-content: center;
 `
 
 const MainContainer = () => {
@@ -46,11 +39,10 @@ const MainContainer = () => {
 			<Banner>
 				<MainBanner/>
 			</Banner>
-			<Deco/>
-			<InfoBoxes>
+			<Deco>
 				<MainAbout/>
-				<MainProduct/>
-			</InfoBoxes>
+			</Deco>
+			<MainProducts/>
 			<MainContactUs/>
 		</Wrapper>
 	);

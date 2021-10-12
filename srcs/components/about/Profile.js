@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  margin-top: 16rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,10 +11,39 @@ const Wrapper = styled.div`
 `
 const Introduce = styled.div`
   width: 120rem;
-  height: 75.2rem;
-  background-image: url("/img/about/profile.png");
-  background-size: cover;
+  height: 68rem;
+  background-image: url("/img/about/profile.webp");
+  background-size: 62rem 68rem;
   background-repeat: no-repeat;
+  background-position-x: right;
+`
+
+const IntroSmalllight = styled.span`
+  font-family: Noto Sans KR, serif;
+  display: block;
+  font-size: 2.4rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #434343;
+  & + & {
+    margin-top: 3rem;
+  }
+`
+
+const IntroSmallbold = styled.span`
+  font-weight: bold;
+`
+
+const IntroBiglight = styled.span`
+  font-size: 6rem;
+  font-weight: lighter;
+`
+const IntroBigBold = styled.span`
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 2;
 `
 
 const UnderBar = styled.div`
@@ -35,55 +65,27 @@ const Prize = styled.div`
   color: #434343;
 `
 
-const IntorSmalllight = styled.span`
-  margin-top: 18rem;
-  font-family: Noto Sans KR, serif;
-  display: block;
-  margin-left: 3.2rem;
-  font-size: 2.4rem;
-  font-weight: 0;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #434343;
-  & + & {
-    margin-top: 3rem;
-  }
-`
-
-const IntorSmallbold = styled.span`
-  font-weight: bold;
-`
-
-const IntorBiglight = styled.span`
-  font-size: 6rem;
-  font-weight: lighter;
-`
-const IntorBigBold = styled.span`
-  font-size: 6rem;
-  font-weight: bold;
-  line-height: 2;
-`
-
 const Profile = ()=>{
 	return (
 		<Wrapper>
 			<Introduce>
-				<IntorSmalllight>
-					<IntorBigBold>㈜푸른청년</IntorBigBold>
-					<IntorBiglight>은<br/></IntorBiglight>
+				<IntroSmalllight>
+					<IntroBigBold>㈜푸른청년</IntroBigBold>
+					<IntroBiglight>은<br/></IntroBiglight>
 					진료와 수술을 통해 떠오른 아이디어를<br/>
 					하나씩 하나씩 실현해 나가기 위해<br/>
 					족부 전문 정형외과 의사들이 만든 회사 입니다.<br/>
-				</IntorSmalllight>
-				<IntorSmalllight>
+				</IntroSmalllight>
+				<IntroSmalllight>
 					누구나 쉽게 접근할 수 있는 제품들을 만들고,<br/>
 					Smart health care platform을 구축하여<br/>
-					<IntorSmallbold>일상과 업무 환경 속의 건강관리를 실현,<br/>
-						정형외과 의료 발전에 기여 하는 것</IntorSmallbold>
-					이 우리의 비전입니다<br/>
-				</IntorSmalllight>
+					<IntroSmallbold>일상과 업무 환경 속의 건강관리를 실현,<br/>
+						정형외과 의료 발전에 기여 하는 것</IntroSmallbold>
+					이<br/>우리의 비전입니다<br/>
+				</IntroSmalllight>
+				<IntroSmalllight style={{paddingTop: "12rem"}}>
+					정형외과 전문의, ㈜푸른청년 대표 박은수
+				</IntroSmalllight>
 			</Introduce>
 			<UnderBar/>
 			<Prize>

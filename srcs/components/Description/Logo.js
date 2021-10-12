@@ -8,13 +8,13 @@ const LogoImg = styled.div`
   width: 26.9rem;
   height: 17.6rem;
   margin: 0 auto 4rem;
-  background-image: url("/img/description/logo.png");
+  background-image: url("/img/description/logo.webp");
   background-size: cover;
   background-repeat: no-repeat;
 `
 
 const TextBase = styled.span`
-  font-family: Noto Sans KR, Serif	;
+  font-family: Noto Sans KR, serif	;
   font-size: 2.4rem;
   font-weight: lighter;
   font-stretch: normal;

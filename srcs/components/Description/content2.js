@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   margin-top: 5rem;
+  width: 120rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 `
 
 const TextContainer = styled.div`
@@ -14,30 +15,29 @@ const TextContainer = styled.div`
 const ImgContainer = styled.div`
   width: 50rem;
   height: 45rem;
-  background-image: url("/img/description/content2.png");
+  background-image: url("/img/description/content2.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
 `
 
 const TextTitle = styled.span`
+  padding-bottom: 5rem;
   margin-top: 5rem;
-  object-fit: contain;
-  text-decoration: underline;
-  text-underline-offset: 1.2rem;
-  font-family: GmarketSansBold ,Serif;
+  font-family: GmarketSansBold ,serif;
   font-size: 4.25rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   display: block;
   text-align: right;
+  text-decoration: underline;
+  text-underline-offset: 1.2rem;
   letter-spacing: -0.085rem;
   color: #28a7e1;
 `
 const TextBase = styled.span`
-  object-fit: contain;
-  font-family: Noto Sans KR, Serif;
+  font-family: Noto Sans KR, serif;
   font-size: 2.4rem;
   font-weight: 300;
   font-stretch: normal;
@@ -60,14 +60,10 @@ const Content2 = () => {
 		<Wrapper>
 			<ImgContainer/>
 			<TextContainer>
-				<TextTitle>Health care platform</TextTitle><br/><br/>
-				<TextBase><TextBold>Smart insole</TextBold>에<br/>
-					foot & ankle health care platform 을 적용<br/>
-					<TextBold>일상 생활 및 업무 환경의 건강 관리를 실현</TextBold><br/>
-				</TextBase>
-				<TextBase float>
-					Platform 서비스를 통해<br/>
-					<TextBold>적합한 shoe를 권유 및 제공</TextBold>하는 서비스<br/>
+				<TextTitle>Health care platform</TextTitle>
+				<TextBase>
+					<TextBold>일상 생활과 업무 환경 개선을 위한</TextBold><br/>
+					<TextBold>맞춤형 건강 관리</TextBold>
 				</TextBase>
 			</TextContainer>
 		</Wrapper>

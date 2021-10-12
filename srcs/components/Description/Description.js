@@ -4,7 +4,7 @@ import Content1 from "./content1";
 import Content2 from "./content2";
 import Content3 from "./content3";
 const Wrapper = styled.div`
-  width: 120rem;
+  width: 150rem;
   margin: 8rem auto;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 const UnderBar = styled.div`
   margin-top: 5rem;
   margin-bottom: 10rem;
-  width: 60rem;
+  width: 40rem;
   border: solid 0.2rem #d7d7d7;
 `
 

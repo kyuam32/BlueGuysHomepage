@@ -3,8 +3,9 @@ import styled, {css} from "styled-components";
 
 const Wrapper = styled.div`
   margin-top: 5rem;
+  width: 120rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 `
 
 const TextContainer = styled.div`
@@ -15,28 +16,28 @@ const TextContainer = styled.div`
 const ImgContainer = styled.div`
   width: 40rem;
   height: 45rem;
-  background-image: url("/img/description/content3.png");
+  background-image: url("/img/description/content3.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
 `
 
 const TextTitle = styled.span`
-  object-fit: contain;
-  font-family: GmarketSansBold, Serif;
+  padding-bottom: 5rem;
+  font-family: GmarketSansBold, serif;
   text-decoration: underline;
   text-underline-offset: 1.2rem;
   font-size: 4.25rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
+  display: block;
   letter-spacing: -0.085rem;
   color: #28a7e1;
 `
 const TextBase = styled.span`
   display: block;
-  object-fit: contain;
-  font-family: Noto Sans KR, Serif;
+  font-family: Noto Sans KR, serif;
   font-size: 2.4rem;
   font-weight: 600;
   font-stretch: normal;
@@ -55,9 +56,10 @@ const TextBase = styled.span`
   }
 `
 const TextSub = styled.span`
+  margin-top: 1rem;
   display: block;
   object-fit: contain;
-  font-family: Noto Sans KR, Serif;
+  font-family: Noto Sans KR, serif;
   font-size: 1.8rem;
   font-weight: 300;
   font-stretch: normal;
@@ -72,7 +74,7 @@ const Content3 = () => {
 	return (
 		<Wrapper>
 			<TextContainer>
-				<TextTitle>Big data research</TextTitle><br/><br/>
+				<TextTitle>Big data research</TextTitle>
 				<TextBase>족부 DATA기반 논문 연구
 					<TextSub>- 국내외 및 SCI journal 등재와 학회 발표</TextSub>
 				</TextBase>

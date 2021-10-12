@@ -2,12 +2,12 @@ import styled from "styled-components";
 import SeeMoreBtn from "../Layout/SeeMoreBtn";
 
 const InfoBox = styled.div`
-  width: 112rem;
-  height: 48rem;
-  background-image: url("/img/main/aboutus.png");
-  background-size : 112rem 50rem;
-  box-shadow: 0.6rem 0.6rem 1.2rem 0 rgba(0,0,0,0.4);
+  width: 120rem;
+  height: 52rem;
+  background-image: url("/img/main/aboutus.webp");
+  background-size : 120rem 52.5rem;
   display: flex;
+  flex-direction: column;
 `
 
 const AboutUs = styled.div`
@@ -60,7 +60,7 @@ const MainAbout = () => {
 					<br/>
 					<Text3>우리는 <Text4>푸른청년</Text4>입니다</Text3>
 				</AboutUs>
-				<SeeMoreBtn address="about"/>
+				<SeeMoreBtn address="about" align="right"/>
 			</InfoBox>
 		</div>
 	);
