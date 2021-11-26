@@ -61,7 +61,7 @@ const Prize = styled.div`
   font-stretch: normal;
   font-style: normal;
   line-height: 1.8;
-  letter-spacing: -0.96px;
+  //letter-spacing: 0.2px;
   color: #434343;
 `
 
@@ -89,7 +89,7 @@ const Profile = ()=>{
 			</Introduce>
 			<UnderBar/>
 			<Prize>
-				2021 한국 보건산업 진흥원 ‘의사 창업 연구회‘ 선정<br/>
+				2021 한국 보건산업 진흥원 ‘의사 창업 연구회’ 선정<br/>
 				2021 창업 진흥원 K-start up ‘초기 창업 패키지’ 선정
 			</Prize>
 		</Wrapper>

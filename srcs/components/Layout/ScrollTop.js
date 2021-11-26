@@ -6,7 +6,6 @@ const Wrapper = styled.div`
   width: 120rem;
   position: absolute;
   display: flex;
-  justify-content: end;
   z-index: -99;
   top: ${props => `${props.height * 0.9}px`}
 `
@@ -15,6 +14,7 @@ const Button = styled.div`
   height: 8rem;
   min-width: 36px;
   min-height: 36px;
+  margin-left: auto;
   cursor: pointer;
   background: #1460a1;
   text-align: center;

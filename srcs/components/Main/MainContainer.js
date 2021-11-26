@@ -21,7 +21,7 @@ const Banner = styled.div`
   background-position-y: top;
 `
 
-const Deco = styled.div`
+const Background = styled.div`
   width: 100%;
   height: 60rem;
   background-image: url("/img/main/bg.webp");
@@ -29,7 +29,7 @@ const Deco = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  align-items: end;
+  //align-items: end;
   justify-content: center;
 `
 
@@ -39,9 +39,9 @@ const MainContainer = () => {
 			<Banner>
 				<MainBanner/>
 			</Banner>
-			<Deco>
+			<Background>
 				<MainAbout/>
-			</Deco>
+			</Background>
 			<MainProducts/>
 			<MainContactUs/>
 		</Wrapper>

@@ -16,7 +16,7 @@ const FooterText = styled.p`
     margin-top: 2.5rem;
   }
   font-family: Noto Sans KR, serif;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: 0.051rem;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import SeeMoreBtn from "../Layout/SeeMoreBtn";
 
 const InfoBox = styled.div`
+  margin-top: 8rem;
   width: 120rem;
   height: 52rem;
   background-image: url("/img/main/aboutus.webp");
@@ -51,18 +52,16 @@ const Text4 = styled.span`
 
 const MainAbout = () => {
 	return (
-		<div>
-			<InfoBox>
-				<AboutUs>
-					<Text1>About US</Text1>
-					<br/>
-					<Text2>일상과 업무환경 속의 건강관리를 실현 <br/>정형외과 의료 발전에 기여하는 사람들</Text2>
-					<br/>
-					<Text3>우리는 <Text4>푸른청년</Text4>입니다</Text3>
-				</AboutUs>
-				<SeeMoreBtn address="about" align="right"/>
-			</InfoBox>
-		</div>
+		<InfoBox>
+			<AboutUs>
+				<Text1>About US</Text1>
+				<br/>
+				<Text2>일상과 업무환경 속의 건강관리를 실현 <br/>정형외과 의료 발전에 기여하는 사람들</Text2>
+				<br/>
+				<Text3>우리는 <Text4>푸른청년</Text4>입니다</Text3>
+			</AboutUs>
+			<SeeMoreBtn address="about" align="right"/>
+		</InfoBox>
 	);
 }
 
