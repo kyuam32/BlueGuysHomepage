@@ -9,14 +9,12 @@ const MapContainer = styled.div`
   width: 120rem;
   height: 60rem;
 `
-
 const Map = ()=>{
 	const API_KEY = process.env.NEXT_PUBLIC_API_CLIENT_ID
 	let client;
 	if (typeof window !== 'undefined') {
 		client = require('react-naver-maps')
 	}
-
 	function NaverMapAPI() {
 		const navermaps = window.naver.maps;
 		return (
@@ -26,12 +24,12 @@ const Map = ()=>{
 					width : "100%",
 					height: "100%"
 				}}
-				defaultCenter={{lat: 37.551229, lng: 126.988205}}
+				defaultCenter={{lat: 36.632866, lng: 127.491833}}
 				defaltzoom={13}
 			>
 				<client.Marker
 					key={1}
-					position={new navermaps.LatLng(37.551229, 126.988205)}
+					position={new navermaps.LatLng(36.632866, 127.491833)}
 					animation={1}
 					// onClick={() => {alert('주소 : 서울 강남구 선릉로 627');}}
 				/>

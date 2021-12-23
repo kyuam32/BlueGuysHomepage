@@ -61,6 +61,7 @@ const Prize = styled.div`
   font-size: 2.4rem;
   font-stretch: normal;
   font-style: normal;
+  letter-spacing: -0.1rem;
   line-height: 1.8;
   color: #434343;
 `
@@ -83,7 +84,7 @@ const Profile = ()=>{
 						정형외과 의료 발전에 기여 하는 것</IntroSmallbold>
 					이<br/>우리의 비전입니다<br/>
 				</IntroSmalllight>
-				<IntroSmalllight style={{paddingTop: "12rem"}}>
+				<IntroSmalllight style={{paddingTop: "8rem"}}>
 					정형외과 전문의, ㈜푸른청년 대표 박은수
 				</IntroSmalllight>
 			</Introduce>
