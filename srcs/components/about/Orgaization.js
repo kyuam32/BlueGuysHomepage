@@ -10,9 +10,7 @@ const OrganImg = styled.div`
   width: 120rem;
   height: 144rem;
   background-image: url("/img/about/organization.webp");
-  background-size: contain;
-  background-position-y: 14rem;
-  background-repeat: no-repeat;
+  background-size: cover;
 `
 const Organization = ()=>{
 	return (

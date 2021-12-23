@@ -9,11 +9,12 @@ const Wrapper = styled.div`
     margin-top: 10rem;
   }
 `
+
 const Introduce = styled.div`
   width: 120rem;
   height: 68rem;
   background-image: url("/img/about/profile.webp");
-  background-size: 62rem 68rem;
+  background-size: 52rem 59rem;
   background-repeat: no-repeat;
   background-position-x: right;
 `
@@ -61,7 +62,6 @@ const Prize = styled.div`
   font-stretch: normal;
   font-style: normal;
   line-height: 1.8;
-  //letter-spacing: 0.2px;
   color: #434343;
 `
 

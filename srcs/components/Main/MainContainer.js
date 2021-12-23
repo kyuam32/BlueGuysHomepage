@@ -3,6 +3,7 @@ import MainBanner from "./MainBanner";
 import MainAbout from "./MainAbout";
 import MainContactUs from "./MainContactus";
 import MainProducts from "./MainProducts";
+import MainDescription from "./MainDescription";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -42,6 +43,7 @@ const MainContainer = () => {
 			<Background>
 				<MainAbout/>
 			</Background>
+			<MainDescription/>
 			<MainProducts/>
 			<MainContactUs/>
 		</Wrapper>
