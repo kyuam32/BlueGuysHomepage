@@ -65,6 +65,16 @@ const Prize = styled.div`
   line-height: 1.8;
   color: #434343;
 `
+const Sign = styled.div`
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background-image: url("/img/about/sign.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 42rem;
+  margin-top: -15rem;
+`
 
 const Profile = ()=>{
 	return (
@@ -87,6 +97,7 @@ const Profile = ()=>{
 				<IntroSmalllight style={{paddingTop: "8rem"}}>
 					정형외과 전문의, ㈜푸른청년 대표 박은수
 				</IntroSmalllight>
+				<Sign/>
 			</Introduce>
 			<UnderBar/>
 			<Prize>

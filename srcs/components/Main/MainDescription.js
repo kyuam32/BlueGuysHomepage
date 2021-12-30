@@ -39,8 +39,8 @@ const MainDescription = () => {
 		<div>
 			<InfoBox>
 				<Container>
-					<Text>㈜푸른청년의바른의사연구소에서는<br/>
-						<TextBold>Foot & ankle Health care system</TextBold>을 만들어 나갑니다</Text>
+					<Text>㈜푸른청년의 바른의사 연구소에서는<br/>
+						<TextBold>Foot & Ankle Health Care System</TextBold>을 만들어 나갑니다</Text>
 				</Container>
 				<Container>
 					<SeeMoreBtn address="description" align="middle"/>

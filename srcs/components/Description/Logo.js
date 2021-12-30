@@ -38,7 +38,7 @@ const Logo = ()=>{
 			<LogoImg/>
 			<TextBase>
 				㈜푸른청년의 <HighLight1>바른의사 연구소에서는</HighLight1><br/>
-				<HighLight2>Foot & ankle Health care system</HighLight2>을  만들어 나갑니다
+				<HighLight2>Foot & Ankle Health Care System</HighLight2>을  만들어 나갑니다
 			</TextBase>
 		</Wrapper>
 	);
