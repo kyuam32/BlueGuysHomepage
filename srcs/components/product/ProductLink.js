@@ -56,7 +56,7 @@ const ProductLink = () => {
 			<Link href="/products">
 				<InfoProduct img="frame1.webp">
 					<InfoDescript>
-						<Title>Dr.FODI</Title>
+						<Title>Dr.PODI</Title>
 						<br/>
 						<Descript1>Make a
 							<Descript2> Comfortable Step</Descript2>

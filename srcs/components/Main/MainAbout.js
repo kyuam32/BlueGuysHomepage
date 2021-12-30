@@ -54,7 +54,7 @@ const MainAbout = () => {
 	return (
 		<InfoBox>
 			<AboutUs>
-				<Text1>About US</Text1>
+				<Text1>About Us</Text1>
 				<br/>
 				<Text2>일상과 업무환경 속의 건강관리를 실현 <br/>정형외과 의료 발전에 기여하는 사람들</Text2>
 				<br/>

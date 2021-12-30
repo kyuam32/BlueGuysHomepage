@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Link from "next/link";
+import SeeMoreBtn from "../Layout/SeeMoreBtn";
 
 const InfoBox = styled.div`
   margin-top: 15rem;
@@ -16,19 +16,8 @@ const InfoBox = styled.div`
 const Container = styled.div`
   text-align: center;
   & + & {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
-`
-
-const Button = styled.div`
-  width: 22rem;
-  height: 5rem;
-  border: solid 1px #808080;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-
 `
 
 const Text = styled.span`
@@ -54,11 +43,7 @@ const MainDescription = () => {
 						<TextBold>Foot & ankle Health care system</TextBold>을 만들어 나갑니다</Text>
 				</Container>
 				<Container>
-					<Button>
-						<Link href="/description">
-							<Text>서비스 보러가기</Text>
-						</Link>
-					</Button>
+					<SeeMoreBtn address="description" align="middle"/>
 				</Container>
 			</InfoBox>
 		</div>

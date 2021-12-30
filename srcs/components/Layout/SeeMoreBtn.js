@@ -6,8 +6,8 @@ const Wrapper = styled.div`
   height: 3.6rem;
   margin-top: auto;
   margin-bottom: 5rem;
-  margin-left: ${props => props.align === "right" ? "auto" : "7rem"};
-  margin-right: ${props => props.align === "right" ? "7rem" : "auto"};
+  margin-left: ${props => props.align === "right" ? "auto" : props.align === "left" ? "7rem" : "auto"};
+  margin-right: ${props => props.align === "right" ? "7rem" : props.align === "left" ? "auto" : "auto"};
 `
 
 const Button = styled.div`

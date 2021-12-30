@@ -60,7 +60,7 @@ const ContactPage = ( )=> {
 				</TextBase>
 				<TextBase>제품문의, 기술문의<br/>
 					회사소개 관련 추가자료 요청 및 제휴 문의 등<br/>
-					관련 문의사항은 <TextBold colored>abcde12345@qwerty.com</TextBold> 으로 보내주시길 바랍니다.
+					관련 문의사항은 <TextBold colored>PuruenYouth@gmail.com</TextBold> 으로 보내주시길 바랍니다.
 				</TextBase>
 				<Bg/>
 			</Wrapper>

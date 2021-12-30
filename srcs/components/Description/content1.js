@@ -66,8 +66,8 @@ const Content1 = () => {
 				<TextBase float>
 					<TextBold style={{textDecoration: "underline"}}>
 						발에 대한 전문성을 가진 브랜드</TextBold><br/>
-					족부 보조 제품 : <TextBold>Dr.PODI</TextBold><br/>
-					깔창 및 신발 제품 : <TextBold>ShuFooter</TextBold><br/>
+					<TextBold>Dr.PODI</TextBold><br/>
+					<TextBold>ShuFooter</TextBold><br/>
 				</TextBase>
 			</TextContainer>
 			<ImgContainer/>

@@ -34,8 +34,8 @@ const Footer = () => {
 				<FooterText>
 					<span>대표이사 : 박은수</span>
 					<br/>
-					<span>주소 : 서울 강남구 선릉로 627 FAX : 02-123-4566 </span>
-					<span>E-mail: asd@mdkjwq.com</span><br/>
+					<span>주소 : 충북 청주시 상당구 용담로 7, B104호 FAX : 0303-3444-3335 </span>
+					<span>E-mail: PuruenYouth@gmail.com</span><br/>
 					<span>Copyright 2021 ALL Rights Reserved 푸른청년</span>
 				</FooterText>
 			</Box>
