@@ -27,7 +27,7 @@ const InfoDescript = styled.div`
 const Title = styled.span`
   font-family: Noto Sans KR, serif;
   font-size: 7.2rem;
-  font-weight: bold;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.4;

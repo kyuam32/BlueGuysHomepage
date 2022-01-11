@@ -39,7 +39,7 @@ const TextBase = styled.span`
   display: block;
   font-family: Noto Sans KR, serif;
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.38;

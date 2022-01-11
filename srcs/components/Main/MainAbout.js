@@ -24,7 +24,6 @@ const AboutUs = styled.div`
 const Text1 = styled.span`
   font-family: GmarketSansBold, serif;
   font-size: 4rem;
-  font-weight: bold;
   line-height: 2;
   color: #ddd;
 `

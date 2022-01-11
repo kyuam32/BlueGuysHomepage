@@ -35,7 +35,7 @@ const Text = styled.span`
   display: block;
   font-size: 2.5rem;
   font-family: Noto Sans KR, serif;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 5rem;
   letter-spacing: 0.15rem;
   color: #fff;

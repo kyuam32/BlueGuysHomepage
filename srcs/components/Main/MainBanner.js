@@ -33,7 +33,7 @@ const Company1 = styled.span`
 `
 const Company2 = styled(Company1)`
   font-family: Noto Sans KR, serif;
-  font-weight: bold;
+  font-weight: 700;
 `
 
 const Dots = styled.div`
