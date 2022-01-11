@@ -11,7 +11,7 @@ const Cross = styled.span`
   font-family: Noto Sans KR, serif;
   mix-blend-mode: unset;
   font-size: 7.2rem;
-  font-weight: bold;
+  font-weight: 700;
   display: block;
   line-height: 9.4rem;
   color: #ffffff;

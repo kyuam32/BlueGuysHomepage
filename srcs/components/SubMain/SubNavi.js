@@ -26,13 +26,6 @@ const Button = styled.div`
   background-color: ${ props => props.idx === props.curr ? "#1460a1" : "#fff"};
   color: ${ props => props.idx === props.curr ? "rgba(255, 255, 255, 0.96)" : "rgba(47, 47, 47, 0.96)"};
 `
-
-function MakeButton(list, currPage) {
-	return (
-		<Button curr={currPage}>{list.string}</Button>
-	)
-}
-
 const SubNavi = ({list, curr, change}) => {
 	return (
 		<Wrapper>

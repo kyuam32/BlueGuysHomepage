@@ -16,7 +16,7 @@ const LogoImg = styled.div`
 const TextBase = styled.span`
   font-family: Noto Sans KR, serif	;
   font-size: 2.4rem;
-  font-weight: lighter;
+  font-weight: 100;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.5;
